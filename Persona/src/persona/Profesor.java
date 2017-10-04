@@ -1,6 +1,9 @@
 package persona;
 
 //Clase profesor que hereda de la clase Persona
+
+import static persona.Aula.MATERIAS;
+
 public class Profesor extends Persona{
      
     //Atributos
@@ -38,6 +41,11 @@ public class Profesor extends Persona{
 
     @Override
     public String toString() {
+        for (int i = 0; i < MATERIAS.length; i++) {
+			
+            System.out.println( MATERIAS[ i ] +" ---> "+ materia );
+			
+		}
         return "Profesor{" + "materia=" + materia + '}';
     }
 

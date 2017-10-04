@@ -20,6 +20,7 @@ public class Aula {
         int num=(int)Math.floor(Math.random()*(minimo-(maximo+1))+(maximo+1));
         return num;
     }
+    
     /*Constructores*/
     public Aula(){
          
@@ -31,12 +32,8 @@ public class Aula {
         materia = MATERIAS[NumeroAleatorio(0,2)];
          
     }
-     
-    /*Metodos*/
-     
-    /**
-     * Crea los alumnos para el aula
-     */
+    
+    //Metodo crea los alumnos para el aula
     private void creaAlumnos(){
          
         for(int i=0;i<alumnos.length;i++){
@@ -44,12 +41,8 @@ public class Aula {
         }
          
     }
-     
-     
-    /**
-     * Indica si la asistencia de los alumnos es mayor del 50%
-     * @return 
-     */
+    
+     //Indica si la asistencia de los alumnos es mayor del 50%
     private boolean asistenciaAlumnos(){
          
         int cuentaAsistencias=0;
@@ -70,10 +63,8 @@ public class Aula {
          
     }
      
-    /**
-     * Indicamos si se puede dar clase
-     * @return 
-     */
+   //Indicamos si se puede dar clase
+    
     public boolean darClase(){
          
         //Indicamos las condiciones para que se pueda dar la clase
@@ -93,10 +84,8 @@ public class Aula {
         return true;
          
     }
-     
-    /**
-     * Indicamos las notas de los alumnos aprobados, chicos y chicas
-     */
+   
+    //Indicamos las notas de los alumnos aprobados, chicos y chicas
     public void notas(){
          
         int chicosApro=0;
@@ -119,7 +108,7 @@ public class Aula {
              
         }
           
-        System.out.println("Hay "+chicosApro+" chicos y "+chicasApro+" chicas aprobados/as");
+        System.out.println("Hay "+chicosApro+" chicos y "+chicasApro+" chicas aprobados/as " + " en " + materia);
          
     }
 

@@ -41,7 +41,17 @@ public class Alumno extends Persona{
 
     @Override
     public String toString() {
-        return "Alumno{" + "nota=" + nota + '}';
+        for (int i = 0; i < NOMBRES_CHICOS.length; i++) {
+			
+            System.out.println( NOMBRES_CHICOS[ i ] +" ---> "+ nota );
+			
+		}
+        
+        for (int x = 0 ; x < NOMBRES_CHICAS.length; x++) {
+            System.out.println( NOMBRES_CHICAS[ x ] +" ---> "+ nota );
+        }
+        
+        return null;
     }
 
 }

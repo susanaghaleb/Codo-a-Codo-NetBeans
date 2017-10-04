@@ -11,8 +11,8 @@ public abstract class Persona {
      
     //Contantes
     
-    private final String[] NOMBRES_CHICOS = {"Kelman", "Brian", "Derek", "Juan", "Pedro"};
-    private final String[] NOMBRES_CHICAS = {"Kate", "Laura", "Alicia", "Matilde", "Valeria"}; 
+    final String[] NOMBRES_CHICOS = {"Kelman", "Brian", "Derek", "Juan", "Pedro"};
+    final String[] NOMBRES_CHICAS = {"Kate", "Laura", "Alicia", "Matilde", "Valeria"}; 
     private final int CHICO = 0;
     private final int CHICA = 1;
     

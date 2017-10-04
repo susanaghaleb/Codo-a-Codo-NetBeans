@@ -6,12 +6,18 @@ public class Aplicacion {
         
         //Creamos el objeto
         Aula aula = new Aula();
-         
-        //Indicamos si se puede dar la clase
+        aula.notas();
+        Alumno a = new Alumno();
+        a.disponibilidad();
+        a.getNota();
+        Profesor p =new Profesor ();
+        p.disponibilidad();
+        p.getMateria();
         if(aula.darClase()){
             aula.notas();
-        }
-         
+    }
+       
+        
     }
      
 }
